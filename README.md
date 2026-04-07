@@ -16,6 +16,13 @@ npm run check
 npm run build
 ```
 
+## CI/CD
+
+- `CI`: ejecuta `npm ci`, `npm run check` y `npm run build` en pushes y pull requests.
+- `Deploy to GitHub Pages`: publica automaticamente el proyecto en GitHub Pages cuando hay cambios en `main`.
+
+Para GitHub Pages este proyecto usa `@sveltejs/adapter-static` y el workflow de despliegue compila con `BASE_PATH=/actividadcorteIII`.
+
 ## Estructura
 
 - `src/lib/core`: cliente HTTP, configuracion y adaptadores.
